@@ -15,7 +15,7 @@ Character.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      classType: {
+      race: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -27,9 +27,23 @@ Character.init(
         type: DataTypes.INTEGER,
         allowNull: false,
       },
+      health: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      mana: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      }
     },
     {
       sequelize,
       modelName: "Character",
     }
   );
+
+  Character.belongsTo(User, { foreignKey: 'userId' });
+  Character.belongsTo(Race, { foreignKey: 'raceId' });
+  Character.belongsTo(Class, { foreignKey: 'classId' });
+
+  module.exports = Character;
