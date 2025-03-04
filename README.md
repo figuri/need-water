@@ -1,12 +1,17 @@
-# React + Vite
+# Character Builder.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Follow the on screen prompts starting from the home screen to create a character. You will be able to choose a
+name, class, and species. Once you have created your character you will be able to view your character sheet. A notes section is available to add any additional information you would like to keep track of.
 
-Currently, two official plugins are available:
+## technologies used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Insomnia
+- MySQL
+- Sequelize
+- Express
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
