@@ -1,6 +1,9 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../config/connection');
 // import DB ^
+const User = require('./user');
+const Race = require('./race')
+const Class = require('./class')
 
 class Character extends Model { }
 
