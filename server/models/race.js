@@ -28,3 +28,5 @@ Race.init(
         sequelize, modelName: "Race"
     }
 );
+
+module.exports = Race;
